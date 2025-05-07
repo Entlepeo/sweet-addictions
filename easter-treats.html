@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Easter Treats| Sweet Addictions</title>
+
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Nunito:wght@400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <noscript>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Nunito:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </noscript>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+</head>
+<body class="fade-in">
+<body class="site-body">
+
+  <header class="site-header text-center py-4">
+    <div class="container">
+      <h1 class="site-title">Easter Treats!</h1>
+      <p class="site-subtitle">Hop into the Season with These Delicious Easter Treats!</p>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Sweet-Addictions!</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="recipes.html">Recipes</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Seasonal Treats
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="christmas-treats.html">Christmas</a></li>
+              <li><a class="dropdown-item" href="halloween-treats.html">Halloween</a></li>
+              <li><a class="dropdown-item active" href="easter-treats.html">Easter</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="contactus.html">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-5">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+
+      <div class="col">
+        <div class="card h-100 treat-card">
+          <img src="images/cake pops.jpeg" class="card-img-top" alt="Easter Cake Pops">
+          <div class="card-body text-center">
+            <h3 class="card-title" style="font-family: 'Pacifico', cursive;">Easter Cake Pops</h3>
+            <button class="btn btn-outline-success mt-3" data-bs-toggle="modal" data-bs-target="#cakePopsModal">View Recipe</button>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col">
+        <div class="card h-100 treat-card">
+          <img src="images/soft-pretzels.jpeg" class="card-img-top" alt="Soft Pretzels">
+          <div class="card-body text-center">
+            <h3 class="card-title" style="font-family: 'Pacifico', cursive;">Soft Pretzels</h3>
+            <button class="btn btn-outline-success mt-3" data-bs-toggle="modal" data-bs-target="#pretzelsModal">View Recipe</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 treat-card">
+          <img src="images/mini egg cookie cups.jpeg" class="card-img-top" alt="Easter Egg Cookie Cups">
+          <div class="card-body text-center">
+            <h3 class="card-title" style="font-family: 'Pacifico', cursive;">Easter Egg Cookie Cups</h3>
+            <button class="btn btn-outline-success mt-3" data-bs-toggle="modal" data-bs-target="#cookieCupsModal">View Recipe</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 treat-card">
+          <img src="images/bunny bark.jpeg" class="card-img-top" alt="Bunny Bark">
+          <div class="card-body text-center">
+            <h3 class="card-title" style="font-family: 'Pacifico', cursive;">Bunny Bark</h3>
+            <button class="btn btn-outline-success mt-3" data-bs-toggle="modal" data-bs-target="#bunnyBarkModal">View Recipe</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 treat-card">
+          <img src="images/dirt cups.jpeg" class="card-img-top" alt="Carrot Patch Dirt Cups">
+          <div class="card-body text-center">
+            <h3 class="card-title" style="font-family: 'Pacifico', cursive;">Carrot Patch Dirt Cups</h3>
+            <button class="btn btn-outline-success mt-3" data-bs-toggle="modal" data-bs-target="#dirtCupsModal">View Recipe</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+    <div class="modal fade" id="cakePopsModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header" style="background-color: #f9dcc4;">
+              <h2 class="modal-title" style="font-family: 'Pacifico', cursive;">Easter Cake Pops</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <h4>🍯 Ingredients</h4>
+                  <ul>
+                    <li>1 box vanilla cake mix</li>
+                    <li>1/2 cup frosting</li>
+                    <li>White chocolate melts</li>
+                    <li>Food coloring & sprinkles</li>
+                    <li>Lollipop sticks</li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <h4>📝 Instructions</h4>
+                  <ol>
+                    <li>Bake cake and let it cool completely.</li>
+                    <li>Crumble cake into a bowl, mix with frosting.</li>
+                    <li>Form into balls, insert sticks, chill.</li>
+                    <li>Dip in melted chocolate, decorate, and let set.</li>
+                  </ol>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-md-3"><h5>⏳ Prep Time</h5><p>20 mins</p></div>
+                <div class="col-md-3"><h5>⏰ Cook Time</h5><p>25 mins</p></div>
+                <div class="col-md-3"><h5>🍴 Yields</h5><p>20 cake pops</p></div>
+                <div class="col-md-3"><h5>🛠️ Tools</h5><ul><li>Mixing bowl</li><li>Microwave</li><li>Stick tray</li><li>Refrigerator</li></ul></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+  <div class="modal fade" id="pretzelsModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" style="font-family: 'Pacifico', cursive;">Soft Pretzels</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6">
+              <h3 style="font-family: 'Pacifico', cursive;">🍯 Ingredients</h3>
+              <ul>
+                <li>2 1/4 tsp active dry yeast</li>
+                <li>1 1/2 cups warm water</li>
+                <li>1 tbsp sugar</li>
+                <li>1 tsp salt</li>
+                <li>4 cups all-purpose flour</li>
+                <li>2 tbsp melted butter</li>
+                <li>2 tbsp baking soda</li>
+                <li>Coarse salt for topping</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h3 style="font-family: 'Pacifico', cursive;">🍴 Instructions</h3>
+              <ol>
+                <li>Activate yeast by dissolving it in warm water with sugar. Let it sit for 5 minutes.</li>
+                <li>Combine flour, salt, and yeast mixture. Knead for 5 minutes until dough is smooth.</li>
+                <li>Let the dough rise for 1 hour until doubled in size.</li>
+                <li>Preheat oven to 425°F (220°C) and line a baking sheet with parchment paper.</li>
+                <li>Divide dough into 8 portions, roll each into a rope, and shape into pretzels.</li>
+                <li>Boil water with baking soda, then dip pretzels into the water for 30 seconds.</li>
+                <li>Place on the baking sheet, sprinkle with coarse salt, and bake for 12-15 minutes until golden brown.</li>
+                <li>Let cool slightly before serving. Enjoy!</li>
+              </ol>
+            </div>
+          </div>
+          <h4 style="font-family: 'Pacifico', cursive;">⏱️ Prep Time: 20 mins | 🍳 Cook Time: 15 mins | 🍽️ Yield: 8 Pretzels</h4>
+          <h4 style="font-family: 'Pacifico', cursive;">🛠️ Tools Needed: Baking Sheet, Rolling Pin, Pot for Boiling</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="cookieCupsModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" style="font-family: 'Pacifico', cursive;">Easter Egg Cookie Cups</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6">
+              <h3 style="font-family: 'Pacifico', cursive;">🍯 Ingredients</h3>
+              <ul>
+                <li>1 cup butter, softened</li>
+                <li>1 cup granulated sugar</li>
+                <li>2 cups all-purpose flour</li>
+                <li>1/2 cup brown sugar</li>
+                <li>1 tsp vanilla extract</li>
+                <li>1/2 tsp baking soda</li>
+                <li>1/4 tsp salt</li>
+                <li>1/4 cup chocolate chips</li>
+                <li>Mini candy eggs (for decoration)</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h3 style="font-family: 'Pacifico', cursive;">🍴 Instructions</h3>
+              <ol>
+                <li>Preheat oven to 350°F (175°C). Grease a muffin tin.</li>
+                <li>Mix butter and both sugars in a bowl. Add vanilla, salt, and baking soda.</li>
+                <li>Stir in the flour to form dough.</li>
+                <li>Press dough into muffin tin cups and bake for 10-12 minutes.</li>
+                <li>Cool slightly before adding chocolate chips and mini candy eggs on top.</li>
+              </ol>
+            </div>
+          </div>
+          <h4 style="font-family: 'Pacifico', cursive;">⏱️ Prep Time: 15 mins | 🍳 Cook Time: 12 mins | 🍽️ Yield: 12 Cookie Cups</h4>
+          <h4 style="font-family: 'Pacifico', cursive;">🛠️ Tools Needed: Muffin Tin, Mixing Bowl, Spatula</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="bunnyBarkModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" style="font-family: 'Pacifico', cursive;">Bunny Bark</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+            <div class="col-md-6">
+              <h3 style="font-family: 'Pacifico', cursive;">🍯 Ingredients</h3>
+              <ul>
+                <li>12 oz white chocolate chips</li>
+                <li>1/2 cup pastel candy pieces</li>
+                <li>1/4 cup shredded coconut (for "bunny tails")</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h3 style="font-family: 'Pacifico', cursive;">🍴 Instructions</h3>
+              <ol>
+                <li>Melt white chocolate in a microwave-safe bowl.</li>
+                <li>Spread melted chocolate on a baking sheet lined with parchment paper.</li>
+                <li>Sprinkle candy pieces and shredded coconut over the melted chocolate.</li>
+                <li>Refrigerate for 30 minutes to harden, then break into pieces.</li>
+              </ol>
+            </div>
+          </div>
+          <h4 style="font-family: 'Pacifico', cursive;">⏱️ Prep Time: 10 mins | 🍳 Cook Time: 0 mins | 🍽️ Yield: 8-10 servings</h4>
+          <h4 style="font-family: 'Pacifico', cursive;">🛠️ Tools Needed: Baking Sheet, Parchment Paper, Microwave-Safe Bowl</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="dirtCupsModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" style="font-family: 'Pacifico', cursive;">Carrot Patch Dirt Cups</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6">
+              <h3 style="font-family: 'Pacifico', cursive;">🍯 Ingredients</h3>
+              <ul>
+                <li>1 package chocolate pudding mix</li>
+                <li>1 1/2 cups milk</li>
+                <li>1 package crushed chocolate cookies</li>
+                <li>Mini candy carrots (for decoration)</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h3 style="font-family: 'Pacifico', cursive;">🍴 Instructions</h3>
+              <ol>
+                <li>Prepare pudding according to package instructions, refrigerate for 10 minutes.</li>
+                <li>Layer crushed cookies at the bottom of cups, then add pudding.</li>
+                <li>Top with crushed cookies and mini candy carrots.</li>
+                <li>Refrigerate for an hour before serving.</li>
+              </ol>
+            </div>
+          </div>
+          <h4 style="font-family: 'Pacifico', cursive;">⏱️ Prep Time: 15 mins | 🍳 Cook Time: 0 mins | 🍽️ Yield: 6 servings</h4>
+          <h4 style="font-family: 'Pacifico', cursive;">🛠️ Tools Needed: Cups, Mixing Bowl</h4>
+        </div>
+      </div>
+    </div>
+</div>
+
+<footer class="text-center py-4 mt-5">
+  <div class="container">
+    <p>© 2023 Sweet Addictions | 123 Diamond City</p>
+    <p>All rights reserved.</p>
+    <div class="mt-2">
+      <a href="#" class="mx-2"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="mx-2"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="mx-2"><i class="fab fa-twitter"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.add('loaded');
+  });
+</script>
+</body>
+</html>

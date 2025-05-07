@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Christmas Treats| Sweet Addictions</title>
+
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Nunito:wght@400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <noscript>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Nunito:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </noscript>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+</head>
+<body class="fade-in">
+
+  <header class="site-header text-center py-4">
+    <div class="container">
+      <h1 class="site-title">Magical Christmas Treats!</h1>
+      <p class="site-subtitle">Sleigh your cravings with festive delights!</p>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Sweet-Addictions!</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="recipes.html">Recipes</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Seasonal Treats
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item active" href="christmas-treats.html">Christmas</a></li>
+              <li><a class="dropdown-item" href="halloween-treats.html">Halloween</a></li>
+              <li><a class="dropdown-item" href="easter-treats.html">Easter</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="contactus.html">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-5">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      
+      <div class="col">
+        <div class="card h-100 treat-card">
+          <img src="images/blue christmas truffled.jpeg" class="card-img-top treat-img" alt="Blue Christmas Truffles" />
+          <div class="card-body text-center">
+            <h3 class="card-title">Blue Christmas Truffles</h3>
+            <button class="btn treat-btn mt-3" data-bs-toggle="modal" data-bs-target="#trufflesModal">View Recipe</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 treat-card">
+          <img src="images/christmas1.jpeg" class="card-img-top treat-img" alt="Eggnog Panna Cotta" />
+          <div class="card-body text-center">
+            <h3 class="card-title">Eggnog Panna Cotta</h3>
+            <button class="btn treat-btn mt-3" data-bs-toggle="modal" data-bs-target="#pannaCottaModal">View Recipe</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 treat-card">
+          <img src="images/santa claus macarons.jpeg" class="card-img-top treat-img" alt="Santa Claus Macarons" />
+          <div class="card-body text-center">
+            <h3 class="card-title">Santa Claus Macarons</h3>
+            <button class="btn treat-btn mt-3" data-bs-toggle="modal" data-bs-target="#macaronsModal">View Recipe</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 treat-card">
+          <img src="images/eggnog cheesecake.jpeg" class="card-img-top treat-img" alt="Eggnog Cheesecake" />
+          <div class="card-body text-center">
+            <h3 class="card-title">Eggnog Cheesecake</h3>
+            <button class="btn treat-btn mt-3" data-bs-toggle="modal" data-bs-target="#cheesecakeModal">View Recipe</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 treat-card">
+          <img src="images/peppermint bark.jpeg" class="card-img-top treat-img" alt="Peppermint Bark" />
+          <div class="card-body text-center">
+            <h3 class="card-title">Peppermint Bark</h3>
+            <button class="btn treat-btn mt-3" data-bs-toggle="modal" data-bs-target="#barkModal">View Recipe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="modal fade" id="trufflesModal" tabindex="-1" aria-labelledby="trufflesModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="trufflesModalLabel">Blue Christmas Truffles</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Prep Time:</strong> 20 mins + chill | <strong>Yield:</strong> 18 truffles</p>
+          <p><strong>Tools Needed:</strong> Mixing bowl, spatula, baking sheet, parchment paper</p>
+          <h6>Ingredients:</h6>
+          <ul>
+            <li>8 oz white chocolate, chopped</li>
+            <li>4 oz cream cheese, softened</li>
+            <li>1/4 tsp vanilla extract</li>
+            <li>Blue sprinkles or sanding sugar</li>
+          </ul>
+          <h6>Instructions:</h6>
+          <ol>
+            <li>Melt white chocolate in a heatproof bowl over simmering water.</li>
+            <li>Beat cream cheese until smooth, then stir in the melted chocolate and vanilla.</li>
+            <li>Chill mixture until firm enough to scoop (about 1 hour).</li>
+            <li>Form into balls and roll in blue sprinkles.</li>
+            <li>Refrigerate until ready to serve.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="pannaCottaModal" tabindex="-1" aria-labelledby="pannaCottaModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="pannaCottaModalLabel">Eggnog Panna Cotta with Spiked Cranberry Sauce</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Prep Time:</strong> 25 mins + chill | <strong>Yield:</strong> 4 servings</p>
+          <p><strong>Tools Needed:</strong> Saucepan, whisk, ramekins</p>
+          <h6>Ingredients:</h6>
+          <p><strong>Panna Cotta:</strong></p>
+          <ul>
+            <li>1 cup eggnog</li>
+            <li>1 cup heavy cream</li>
+            <li>1/4 cup sugar</li>
+            <li>1 envelope unflavored gelatin</li>
+            <li>1/4 tsp nutmeg</li>
+          </ul>
+          <p><strong>Cranberry Sauce:</strong></p>
+          <ul>
+            <li>1 cup cranberries</li>
+            <li>1/4 cup sugar</li>
+            <li>2 tbsp water</li>
+            <li>1 tbsp rum or bourbon (optional)</li>
+          </ul>
+          <h6>Instructions:</h6>
+          <ol>
+            <li>Sprinkle gelatin over 2 tbsp cold water; let sit 5 mins.</li>
+            <li>Heat eggnog, cream, sugar, and nutmeg in a saucepan until hot, but not boiling.</li>
+            <li>Stir in gelatin until dissolved. Pour into ramekins and refrigerate for 4 hours or overnight.</li>
+            <li>For sauce, simmer cranberries, sugar, and water until thickened. Stir in rum.</li>
+            <li>Serve panna cotta topped with cranberry sauce.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="macaronsModal" tabindex="-1" aria-labelledby="macaronsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="macaronsModalLabel">Santa Claus Macarons</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Prep Time:</strong> 1 hour | <strong>Yield:</strong> 24 macarons</p>
+          <p><strong>Tools Needed:</strong> Mixer, piping bag, baking mat</p>
+          <h6>Ingredients:</h6>
+          <p><strong>Macaron Shells:</strong></p>
+          <ul>
+            <li>1 cup powdered sugar</li>
+            <li>3/4 cup almond flour</li>
+            <li>2 egg whites</li>
+            <li>1/4 cup granulated sugar</li>
+            <li>Red food coloring</li>
+          </ul>
+          <p><strong>Filling:</strong></p>
+          <ul>
+            <li>1/2 cup butter, softened</li>
+            <li>1 cup powdered sugar</li>
+            <li>1 tsp vanilla</li>
+          </ul>
+          <h6>Instructions:</h6>
+          <ol>
+            <li>Sift almond flour and powdered sugar together.</li>
+            <li>Whip egg whites until foamy; add sugar gradually and beat until stiff peaks form. Add food coloring.</li>
+            <li>Fold in dry mixture. Pipe rounds onto parchment and rest 30 mins.</li>
+            <li>Bake at 300°F (150°C) for 15 mins. Cool completely.</li>
+            <li>Mix filling ingredients and pipe onto one shell, then sandwich with another.</li>
+            <li>Decorate shells with icing to resemble Santa faces.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="cheesecakeModal" tabindex="-1" aria-labelledby="cheesecakeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cheesecakeModalLabel">Eggnog Cheesecake</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Prep Time:</strong> 30 mins | <strong>Yield:</strong> 12 slices</p>
+          <p><strong>Tools Needed:</strong> Springform pan, mixer, whisk</p>
+          <h6>Ingredients:</h6>
+          <ul>
+            <li>1 1/2 cups graham cracker crumbs</li>
+            <li>1/4 cup melted butter</li>
+            <li>3 8-oz packages cream cheese</li>
+            <li>1/2 cup sugar</li>
+            <li>3 eggs</li>
+            <li>1 cup eggnog</li>
+            <li>1/4 tsp nutmeg</li>
+            <li>1 tsp vanilla extract</li>
+          </ul>
+          <h6>Instructions:</h6>
+          <ol>
+            <li>Mix graham crumbs and butter, then press into bottom of pan. Bake at 325°F for 10 mins.</li>
+            <li>Beat cream cheese and sugar until smooth. Add eggs, one at a time, then eggnog, nutmeg, and vanilla.</li>
+            <li>Pour into crust and bake at 325°F for 55 mins.</li>
+            <li>Cool and refrigerate for 4 hours or overnight.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="barkModal" tabindex="-1" aria-labelledby="barkModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="barkModalLabel">Peppermint Bark</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Prep Time:</strong> 15 mins | <strong>Yield:</strong> 12 servings</p>
+          <p><strong>Tools Needed:</strong> Baking sheet, parchment paper</p>
+          <h6>Ingredients:</h6>
+          <ul>
+            <li>1 lb dark chocolate</li>
+            <li>1/2 lb white chocolate</li>
+            <li>1/2 cup crushed peppermint candies</li>
+          </ul>
+          <h6>Instructions:</h6>
+          <ol>
+            <li>Melt dark chocolate and spread onto baking sheet.</li>
+            <li>Melt white chocolate and drizzle over dark chocolate.</li>
+            <li>Sprinkle with crushed peppermint candies.</li>
+            <li>Let set in fridge for 1 hour, then break into pieces.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center py-4 mt-5">
+    <div class="container">
+      <p>© 2023 Sweet Addictions | 123 Diamond City</p>
+      <p>All rights reserved.</p>
+      <div class="mt-2">
+        <a href="#" class="mx-2"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="mx-2"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="mx-2"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      document.body.classList.add('loaded');
+    });
+  </script>
+</body>
+</html>
+

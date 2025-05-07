@@ -1,0 +1,485 @@
+/* General Styles */
+body {
+  background-color: #fff5f5;
+  font-family: 'Nunito', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 20px;
+  background-image: url('https://www.transparenttextures.com/patterns/cream-paper.png');
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Dancing Script', cursive;
+  color: #6d3b47;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin: 30px 0;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: inline-block;
+}
+
+h1::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(90deg, #f8bbd0, #e91e63, #f8bbd0);
+  border-radius: 3px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #8d4b57;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #fce4ec !important;
+  box-shadow: 0 2px 15px rgba(233, 30, 99, 0.15);
+  border-radius: 50px;
+  margin: 0 auto 30px;
+  max-width: 95%;
+  padding: 10px 20px;
+  border: 1px solid #f8bbd0;
+}
+
+.navbar-brand {
+  color: #d81b60 !important;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  font-size: 2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.05);
+}
+
+.nav-link {
+  color: #ad1457 !important;
+  font-weight: 600;
+  margin: 0 8px;
+  transition: all 0.3s ease;
+  border-radius: 20px;
+  padding: 8px 20px !important;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #ffffff !important;
+  background-color: #f06292;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(233, 30, 99, 0.3);
+}
+
+.nav-link.active {
+  background-color: #ec407a;
+  color: white !important;
+  box-shadow: 0 4px 12px rgba(233, 30, 99, 0.3);
+}
+
+.nav-link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: #f8bbd0;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::before {
+  width: 60%;
+}
+
+/* Dropdown Styles */
+.dropdown-menu {
+  background-color: #fce4ec;
+  border: none;
+  box-shadow: 0 5px 20px rgba(233, 30, 99, 0.2);
+  border-radius: 15px;
+  padding: 10px 0;
+  border: 1px solid #f8bbd0;
+}
+
+.dropdown-item {
+  color: #880e4f;
+  transition: all 0.2s ease;
+  padding: 8px 20px;
+  font-weight: 500;
+  position: relative;
+}
+
+.dropdown-item:hover {
+  background-color: #f8bbd0;
+  color: #d81b60;
+  padding-left: 25px;
+}
+
+.dropdown-item::before {
+  content: '→';
+  position: absolute;
+  left: 5px;
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+
+.dropdown-item:hover::before {
+  opacity: 1;
+  left: 10px;
+}
+
+/* Mobile Menu Button */
+.navbar-toggler {
+  border-color: #f8bbd0;
+  padding: 0.5rem 0.75rem;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(216, 27, 96, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  width: 1.2em;
+  height: 1.2em;
+}
+
+/* Animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* Recipe Cards Section */
+.container.my-5 {
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(233, 30, 99, 0.1);
+  border: 1px solid #f8bbd0;
+}
+
+/* Divider */
+.divider {
+  border: none;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #f8bbd0, #ec407a, #f8bbd0, transparent);
+  margin: 40px 0;
+  opacity: 0.7;
+}
+
+/* Footer */
+footer {
+  background-color: #fce4ec;
+  border-top: 3px solid #f8bbd0;
+  padding: 30px 0;
+  margin-top: 50px;
+  color: #6a4a98;
+  font-family: 'Comic Neue', cursive;
+}
+
+.social-icons a {
+  color: #ad1457;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.social-icons a:hover {
+  color: #ec407a;
+  transform: translateY(-5px) scale(1.2);
+}
+
+/* Flip Card */
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 30vh; 
+  perspective: 1000px;
+  margin-bottom: 20px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.flip-card-front {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+
+.flip-card-front .card-body {
+  background-color: rgba(0,0,0,0.5);
+  width: 100%;
+  padding: 20px;
+}
+
+.flip-card-back {
+  background-size: cover;
+  background-position: center;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.flip-card-back .card-body {
+  background-color: rgba(113, 28, 36, 0.8);
+  width: 100%;
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flip-card .card-title {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.flip-card ul {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.flip-card li {
+  margin-bottom: 5px;
+}
+
+.flip-card .btn {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: none;
+  font-weight: bold;
+}
+
+.flip-card .btn:hover {
+  background-color: white;
+  color: #721c24;
+}
+
+/* Special styling for bonus card */
+.bonus-card {
+  height: 35vh;  
+}
+
+.bonus-card .flip-card-front,
+.bonus-card .flip-card-back {
+  background-size: cover;
+}
+
+.bonus-card .card-title {
+  font-size: 1.8rem;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .flip-card {
+    height: 250px;  
+    margin-bottom: 15px; 
+  }
+
+  .bonus-card {
+    height: 300px;  
+  }
+
+  .flip-card-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+  }
+
+  .flip-card .card-body {
+    padding: 15px;
+    background-color: rgba(0,0,0,0.7);  
+  }
+
+  .flip-card .card-title {
+    font-size: 1.2rem; 
+  }
+
+  .flip-card-back .card-body {
+    padding: 15px;
+    font-size: 0.9rem; 
+  }
+
+  /* Adjust layout for smaller screen */
+  .row {
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: center; 
+  } 
+
+  .col-md-4 {
+    flex: 1 1 100%;  
+  }
+
+  .flip-card .btn {
+    padding: 12px 25px;  /* Larger button padding for mobile */
+    font-size: 1.2rem;  /* Bigger text for better readability */
+  }
+}
+
+/* Contact Page Specific */
+.contact-info h5 {
+  color: #d81b60;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.contact-info p {
+  color: #6d3b47;
+  margin-bottom: 0;
+}
+
+.newsletter-box {
+  background-color: #fce4ec;
+  border: 2px dashed #f8bbd0;
+  box-shadow: 0 5px 15px rgba(233, 30, 99, 0.1);
+}
+
+.form-control, .form-select {
+  border: 1px solid #f8bbd0;
+  padding: 10px 15px;
+  border-radius: 50px;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: #ec407a;
+  box-shadow: 0 0 0 0.25rem rgba(236, 64, 122, 0.25);
+}
+
+.input-group .btn {
+  border-radius: 0 50px 50px 0 !important;
+}
+
+.input-group .form-control {
+  border-radius: 50px 0 0 50px !important;
+}
+
+/* Easter Palette */
+:root {
+  --easter-pink: #ffcce6;
+  --easter-lavender: #e6ccff;
+  --easter-mint: #ccffdd;
+  --easter-yellow: #fff2cc;
+}
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Comic+Neue:wght@400;700&display=swap');
+
+/* Site Base */
+.site-body {
+  background-color: #fff9f9;
+  font-family: 'Comic Neue', cursive;
+}
+
+.site-header {
+  background: linear-gradient(to right, var(--easter-pink), var(--easter-lavender), var(--easter-mint), var(--easter-yellow));
+  color: #6a4a98;
+  border-bottom: 3px dotted white;
+}
+
+.site-title {
+  font-family: 'Pacifico', cursive;
+  font-size: 3rem;
+  text-shadow: 2px 2px 0px white;
+}
+
+.site-subtitle {
+  font-family: 'Comic Neue', cursive;
+  font-weight: 700;
+}
+
+/* Treat Cards */
+.treat-card {
+  border-radius: 15px;
+  overflow: hidden;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  background-color: white;
+}
+
+.treat-card:hover {
+  transform: translateY(-5px);
+}
+
+.treat-card .card-img-top {
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.treat-card .card-title {
+  font-family: 'Pacifico', cursive;
+  color: #6a4a98;
+}
+
+/* Modal Styling */
+.modal-header {
+  background: linear-gradient(to right, var(--easter-pink), var(--easter-lavender));
+  color: white;
+}
+
+/* Image Fix */
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+body.loaded {
+  opacity: 1;
+}
+
+

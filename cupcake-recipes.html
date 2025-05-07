@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cupcake Recipes | Sweet Addictions</title>
+
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Nunito:wght@400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <noscript>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Nunito:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </noscript>
+
+  <style>
+    .recipe-card {
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      margin-bottom: 30px;
+    }
+    .recipe-card:hover {
+      transform: translateY(-5px);
+    }
+    .recipe-img {
+      height: 250px;
+      object-fit: cover;
+    }
+    .recipe-header {
+      background: linear-gradient(to right, #f8bbd0, #e1bee7);
+      color: white;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+    .ingredient-list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    .ingredient-list li {
+      padding: 5px 0;
+      border-bottom: 1px dashed #eee;
+    }
+    .step-number {
+      background-color: #e1bee7;
+      color: white;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 10px;
+    }
+    .cupcake-icon {
+      color: #d4a373;
+      margin-right: 5px;
+    }
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+</head>
+<body class="fade-in">
+
+  <header class="bg-light py-3 text-center">
+    <h1 class="display-4" style="font-family: 'Dancing Script', cursive;">Sweet Addictions</h1>
+  </header>
+
+  <nav class="navbar navbar-expand-lg bg-light navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Sweet-Addictions!</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="recipes.html">Recipes</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Seasonal Treats
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="christmas-treats.html">Christmas</a></li>
+              <li><a class="dropdown-item" href="halloween-treats.html">Halloween</a></li>
+              <li><a class="dropdown-item" href="easter-treats.html">Easter</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="feedback.html">Feedback</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-5">
+    <div class="recipe-header text-center">
+      <h2 style="font-family: 'Dancing Script', cursive; margin-bottom: 0;">Cupcake Recipes</h2>
+      <p class="mb-0">Delightful cupcakes for every occasion</p>
+    </div>
+
+    <div class="row">
+      
+      <div class="col-lg-6">
+        <div class="recipe-card">
+          <img src="images/cappucino.jpeg" class="img-fluid recipe-img" alt="Cappuccino Muffins">
+          <div class="p-4">
+            <h3>Cappuccino Muffins</h3>
+            <div class="d-flex justify-content-between mb-3">
+              <span><i class="fas fa-clock me-2"></i>35 mins</span>
+              <span><i class="fas fa-cupcake cupcake-icon me-2"></i>12 muffins</span>
+              <span><i class="fas fa-star me-2"></i>Medium</span>
+            </div>
+            
+            <h5>Ingredients:</h5>
+            <ul class="ingredient-list">
+              <li>2 cups all-purpose flour</li>
+              <li>3/4 cup granulated sugar</li>
+              <li>2 1/2 tsp baking powder</li>
+              <li>1 tsp cinnamon</li>
+              <li>1/2 tsp salt</li>
+              <li>1 cup milk</li>
+              <li>2 tbsp instant coffee granules</li>
+              <li>1/2 cup butter, melted</li>
+              <li>1 large egg</li>
+              <li>1 tsp vanilla extract</li>
+              <li>1/2 cup mini chocolate chips</li>
+              <li>1/4 cup brown sugar (for topping)</li>
+              <li>1/4 cup chopped walnuts (for topping)</li>
+            </ul>
+            
+            <h5>Instructions:</h5>
+            <ol class="ps-0">
+              <li class="d-flex mb-2"><span class="step-number">1</span>Preheat oven to 375°F (190°C) and line muffin tin</li>
+              <li class="d-flex mb-2"><span class="step-number">2</span>Combine flour, sugar, baking powder, cinnamon and salt</li>
+              <li class="d-flex mb-2"><span class="step-number">3</span>Heat milk and dissolve coffee granules in it</li>
+              <li class="d-flex mb-2"><span class="step-number">4</span>Whisk in melted butter, egg and vanilla</li>
+              <li class="d-flex mb-2"><span class="step-number">5</span>Add wet ingredients to dry ingredients, stir until just combined</li>
+              <li class="d-flex mb-2"><span class="step-number">6</span>Fold in chocolate chips</li>
+              <li class="d-flex mb-2"><span class="step-number">7</span>Divide batter among muffin cups</li>
+              <li class="d-flex mb-2"><span class="step-number">8</span>Mix brown sugar and walnuts, sprinkle on top</li>
+              <li class="d-flex mb-2"><span class="step-number">9</span>Bake for 18-20 minutes until toothpick comes out clean</li>
+              <li class="d-flex mb-2"><span class="step-number">10</span>Cool in pan for 5 minutes then transfer to rack</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-lg-6">
+        <div class="recipe-card">
+          <img src="images/Chocolate Coffee Cream Cupcakes.jpeg" class="img-fluid recipe-img" alt="Chocolate Coffee Cream Cupcakes">
+          <div class="p-4">
+            <h3>Chocolate Coffee Cream Cupcakes</h3>
+            <div class="d-flex justify-content-between mb-3">
+              <span><i class="fas fa-clock me-2"></i>45 mins</span>
+              <span><i class="fas fa-cupcake cupcake-icon me-2"></i>16 cupcakes</span>
+              <span><i class="fas fa-star me-2"></i>Intermediate</span>
+            </div>
+            
+            <h5>Ingredients:</h5>
+            <ul class="ingredient-list">
+              <li>1 3/4 cups all-purpose flour</li>
+              <li>3/4 cup unsweetened cocoa powder</li>
+              <li>1 1/2 tsp baking powder</li>
+              <li>1 1/2 tsp baking soda</li>
+              <li>1 tsp salt</li>
+              <li>2 cups granulated sugar</li>
+              <li>2 large eggs</li>
+              <li>1 cup whole milk</li>
+              <li>1/2 cup vegetable oil</li>
+              <li>2 tsp vanilla extract</li>
+              <li>1 cup boiling water</li>
+              <li>2 tbsp instant coffee granules</li>
+              <li>2 cups heavy cream (for frosting)</li>
+              <li>1/4 cup powdered sugar (for frosting)</li>
+              <li>1 tsp vanilla extract (for frosting)</li>
+              <li>Chocolate shavings for garnish</li>
+            </ul>
+            
+            <h5>Instructions:</h5>
+            <ol class="ps-0">
+              <li class="d-flex mb-2"><span class="step-number">1</span>Preheat oven to 350°F (175°C) and line muffin tins</li>
+              <li class="d-flex mb-2"><span class="step-number">2</span>Sift together flour, cocoa, baking powder, baking soda and salt</li>
+              <li class="d-flex mb-2"><span class="step-number">3</span>Beat sugar and eggs until light and fluffy</li>
+              <li class="d-flex mb-2"><span class="step-number">4</span>Add milk, oil and vanilla, mix well</li>
+              <li class="d-flex mb-2"><span class="step-number">5</span>Gradually add dry ingredients, mixing until combined</li>
+              <li class="d-flex mb-2"><span class="step-number">6</span>Dissolve coffee in boiling water, then add to batter</li>
+              <li class="d-flex mb-2"><span class="step-number">7</span>Fill liners 2/3 full and bake for 18-20 minutes</li>
+              <li class="d-flex mb-2"><span class="step-number">8</span>Cool completely before frosting</li>
+              <li class="d-flex mb-2"><span class="step-number">9</span>For frosting: Whip cream with powdered sugar and vanilla</li>
+              <li class="d-flex mb-2"><span class="step-number">10</span>Pipe frosting onto cooled cupcakes</li>
+              <li class="d-flex mb-2"><span class="step-number">11</span>Garnish with chocolate shavings</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="recipe-card">
+          <img src="images/lemon poppyseed cakes.jpeg" class="img-fluid recipe-img" alt="Lemon Poppyseed Mini-cakes">
+          <div class="p-4">
+            <h3>Lemon Poppyseed Mini-cakes</h3>
+            <div class="d-flex justify-content-between mb-3">
+              <span><i class="fas fa-clock me-2"></i>40 mins</span>
+              <span><i class="fas fa-cupcake cupcake-icon me-2"></i>24 mini cakes</span>
+              <span><i class="fas fa-star me-2"></i>Medium</span>
+            </div>
+            
+            <h5>Ingredients:</h5>
+            <ul class="ingredient-list">
+              <li>2 1/2 cups all-purpose flour</li>
+              <li>2 tsp baking powder</li>
+              <li>1/2 tsp baking soda</li>
+              <li>1/2 tsp salt</li>
+              <li>1 cup unsalted butter, softened</li>
+              <li>1 1/2 cups granulated sugar</li>
+              <li>3 large eggs</li>
+              <li>1/4 cup lemon zest (about 4 lemons)</li>
+              <li>2 tbsp poppy seeds</li>
+              <li>1/2 cup lemon juice</li>
+              <li>1 cup buttermilk</li>
+              <li>1 tsp vanilla extract</li>
+              <li>2 cups powdered sugar (for glaze)</li>
+              <li>3-4 tbsp lemon juice (for glaze)</li>
+            </ul>
+            
+            <h5>Instructions:</h5>
+            <ol class="ps-0">
+              <li class="d-flex mb-2"><span class="step-number">1</span>Preheat oven to 350°F (175°C) and grease mini bundt pans</li>
+              <li class="d-flex mb-2"><span class="step-number">2</span>Whisk together flour, baking powder, baking soda and salt</li>
+              <li class="d-flex mb-2"><span class="step-number">3</span>Cream butter and sugar until light and fluffy</li>
+              <li class="d-flex mb-2"><span class="step-number">4</span>Add eggs one at a time, beating well after each</li>
+              <li class="d-flex mb-2"><span class="step-number">5</span>Mix in lemon zest and poppy seeds</li>
+              <li class="d-flex mb-2"><span class="step-number">6</span>Combine lemon juice, buttermilk and vanilla</li>
+              <li class="d-flex mb-2"><span class="step-number">7</span>Alternately add dry ingredients and wet ingredients to butter mixture</li>
+              <li class="d-flex mb-2"><span class="step-number">8</span>Fill mini pans 2/3 full and bake for 15-18 minutes</li>
+              <li class="d-flex mb-2"><span class="step-number">9</span>Cool in pans for 10 minutes then transfer to rack</li>
+              <li class="d-flex mb-2"><span class="step-number">10</span>For glaze: Whisk powdered sugar and lemon juice</li>
+              <li class="d-flex mb-2"><span class="step-number">11</span>Drizzle glaze over cooled mini cakes</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+     
+      <div class="col-lg-6">
+        <div class="recipe-card">
+          <img src="images/Mini Strawberry Cheesecakes.jpeg" class="img-fluid recipe-img" alt="Mini Strawberry Cheesecakes">
+          <div class="p-4">
+            <h3>Mini Strawberry Cheesecakes</h3>
+            <div class="d-flex justify-content-between mb-3">
+              <span><i class="fas fa-clock me-2"></i>1 hour + chilling</span>
+              <span><i class="fas fa-cupcake cupcake-icon me-2"></i>12 mini cheesecakes</span>
+              <span><i class="fas fa-star me-2"></i>Intermediate</span>
+            </div>
+            
+            <h5>Ingredients:</h5>
+            <ul class="ingredient-list">
+              <li>1 1/2 cups graham cracker crumbs</li>
+              <li>1/4 cup granulated sugar</li>
+              <li>6 tbsp melted butter</li>
+              <li>16 oz cream cheese, softened</li>
+              <li>2/3 cup granulated sugar</li>
+              <li>2 large eggs</li>
+              <li>1 tsp vanilla extract</li>
+              <li>1/2 cup sour cream</li>
+              <li>1 lb fresh strawberries, hulled</li>
+              <li>1/4 cup strawberry jam</li>
+              <li>1 tbsp lemon juice</li>
+            </ul>
+            
+            <h5>Instructions:</h5>
+            <ol class="ps-0">
+              <li class="d-flex mb-2"><span class="step-number">1</span>Preheat oven to 325°F (165°C) and line muffin tin with liners</li>
+              <li class="d-flex mb-2"><span class="step-number">2</span>Mix graham crumbs, 1/4 cup sugar and melted butter</li>
+              <li class="d-flex mb-2"><span class="step-number">3</span>Press 2 tbsp mixture into each liner to form crust</li>
+              <li class="d-flex mb-2"><span class="step-number">4</span>Bake crusts for 5 minutes, then cool</li>
+              <li class="d-flex mb-2"><span class="step-number">5</span>Beat cream cheese and 2/3 cup sugar until smooth</li>
+              <li class="d-flex mb-2"><span class="step-number">6</span>Add eggs one at a time, then vanilla and sour cream</li>
+              <li class="d-flex mb-2"><span class="step-number">7</span>Divide filling among cups, filling almost to top</li>
+              <li class="d-flex mb-2"><span class="step-number">8</span>Bake for 20-22 minutes until centers are almost set</li>
+              <li class="d-flex mb-2"><span class="step-number">9</span>Cool completely then refrigerate for at least 4 hours</li>
+              <li class="d-flex mb-2"><span class="step-number">10</span>Blend half the strawberries with jam and lemon juice</li>
+              <li class="d-flex mb-2"><span class="step-number">11</span>Slice remaining strawberries for topping</li>
+              <li class="d-flex mb-2"><span class="step-number">12</span>Top each cheesecake with sauce and strawberry slices</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="text-center py-4 mt-5">
+    <div class="container">
+      <p>&copy; 2023 Sweet Addictions. All rights reserved.</p>
+      <div class="mt-2">
+        <a href="#" class="mx-2"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="mx-2"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="mx-2"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      document.body.classList.add('loaded');
+    });
+  </script>
+</body>
+</html>
